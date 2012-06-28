@@ -8,10 +8,12 @@
 </head>
 <body style="background: #eeeed4;">
 
+<%= image_tag("logo.png", :alt => "logo") %><br />
 | <%= link_to "Shop", products_path %> |
 <%= link_to "Leave Site", :controller => "welcome", :action => "thank_you" %> |
 <%= link_to "Register", :controller => "welcome", :action => "register" %> |
 <%= link_to "Home", :controller => "welcome", :action => "home" %> |
+
 
 <div id='header'>
   <% if logged_in? %>
